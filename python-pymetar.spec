@@ -12,7 +12,7 @@ Source0:	http://www.schwarzvogel.de/pkgs/%{module}-%{version}.tar.gz
 # Source0-md5:	8c2e09e4ecd24fda523b1f179aa94275
 URL:		http://www.schwarzvogel.de/software-pymetar.shtml
 %pyrequires_eq	python-modules
-BuildRequires:	python-devel >= 2.3
+BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
