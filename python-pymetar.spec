@@ -5,12 +5,12 @@
 Summary:	Module that provides access to NOAA's METAR weather reports
 Summary(pl):	Modu³ do pobierania danych pogodowych METAR
 Name:		python-%{module}
-Version:	0.7
+Version:	0.8
 Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://www.schwarzvogel.de/pkgs/%{module}-%{version}.tar.gz
-# Source0-md5:	7780d32f3f8c185c73adb68bc7d1acc1
+# Source0-md5:	228eedaddc7821f2ed086d91f9d56b68
 URL:		http://www.schwarzvogel.de/software-pymetar.shtml
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 2.3
