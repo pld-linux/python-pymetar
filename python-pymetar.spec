@@ -1,5 +1,5 @@
 
-%define         module	pymetar
+%define		module	pymetar
 
 Summary:	Module that provides access to NOAA's METAR weather reports
 Summary(pl):	Modu³ do pobierania danych pogodowych METAR
@@ -56,7 +56,7 @@ python setup.py build
 %install
 rm -rf $RPM_BUILD_ROOT
 python setup.py install \
-        --root=$RPM_BUILD_ROOT --optimize=2
+	--root=$RPM_BUILD_ROOT --optimize=2
 
 rm -f $RPM_BUILD_ROOT%{py_sitedir}/%{module}.py
 
