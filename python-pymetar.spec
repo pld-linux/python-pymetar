@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.python
 
-%define         module pymetar
+%define         module	pymetar
 
 Summary:	Module that provides access to NOAA's METAR weather reports
 Summary(pl):	Modu³ do pobierania danych pogodowych METAR
