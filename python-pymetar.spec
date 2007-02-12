@@ -2,7 +2,7 @@
 %define		module	pymetar
 
 Summary:	Module that provides access to NOAA's METAR weather reports
-Summary(pl):	Modu³ do pobierania danych pogodowych METAR
+Summary(pl.UTF-8):   ModuÅ‚ do pobierania danych pogodowych METAR
 Name:		python-%{module}
 Version:	0.12
 Release:	1
@@ -31,18 +31,18 @@ The library provides a large number of methods to fetch the parsed
 information in a plethora of formats. Those functions are described in
 the file librarydoc.txt which was in turn generated using PyDoc.
 
-%description -l pl
+%description -l pl.UTF-8
 NOAA (Narodowa Administracja Oceaniczna i Atmosferyczna, www.noaa.gov)
-udostêpnia raporty pogodowe generowane przez wiele stacji pogodowych z
-ca³ego ¶wiata. Raporty te nazywane s± raportami METAR i udostêpniane w
-postaci plików tekstowych.
+udostÄ™pnia raporty pogodowe generowane przez wiele stacji pogodowych z
+caÅ‚ego Å›wiata. Raporty te nazywane sÄ… raportami METAR i udostÄ™pniane w
+postaci plikÃ³w tekstowych.
 
-Jest to wygodne je¶li chce siê szybko przejrzeæ dane. Jednak
-przetwarzanie ich mo¿e byæ k³opotliwe. Dodatkowo, trzeba pamiêtaæ
+Jest to wygodne jeÅ›li chce siÄ™ szybko przejrzeÄ‡ dane. Jednak
+przetwarzanie ich moÅ¼e byÄ‡ kÅ‚opotliwe. Dodatkowo, trzeba pamiÄ™taÄ‡
 adres pliku z danej stacji pogodowej.
 
-Biblioteka ta udostêpnia wiele metod, które udostêpniaj± dane
-przetworzone z raportów METAR.
+Biblioteka ta udostÄ™pnia wiele metod, ktÃ³re udostÄ™pniajÄ… dane
+przetworzone z raportÃ³w METAR.
 
 %prep
 %setup -q -n %{module}-%{version}
