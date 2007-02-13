@@ -2,7 +2,7 @@
 %define		module	pymetar
 
 Summary:	Module that provides access to NOAA's METAR weather reports
-Summary(pl.UTF-8):   Moduł do pobierania danych pogodowych METAR
+Summary(pl.UTF-8):	Moduł do pobierania danych pogodowych METAR
 Name:		python-%{module}
 Version:	0.12
 Release:	1
