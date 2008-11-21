@@ -10,7 +10,8 @@ Source0:	http://www.schwarzvogel.de/pkgs/%{module}-%{version}.tar.gz
 # Source0-md5:	84b6737b101daf5647a60d0d93d7783a
 URL:		http://www.schwarzvogel.de/software-pymetar.shtml
 %pyrequires_eq	python-modules
-BuildRequires:	python-devel >= 1:2.3
+BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -69,5 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README THANKS TODO librarydoc.txt
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/*.py[co]
+%{py_sitescriptdir}/*.egg-info
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/*
