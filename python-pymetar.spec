@@ -2,12 +2,12 @@
 Summary:	Module that provides access to NOAA's METAR weather reports
 Summary(pl.UTF-8):	Moduł do pobierania danych pogodowych METAR
 Name:		python-%{module}
-Version:	0.13
-Release:	2
+Version:	0.14
+Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://www.schwarzvogel.de/pkgs/%{module}-%{version}.tar.gz
-# Source0-md5:	84b6737b101daf5647a60d0d93d7783a
+# Source0-md5:	024fb0b46c0cb8cf21d63c68d2014796
 URL:		http://www.schwarzvogel.de/software-pymetar.shtml
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 1:2.5
@@ -53,23 +53,21 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT --optimize=2
 
-install bin/example.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-
 rm -f $RPM_BUILD_ROOT%{py_sitedir}/%{module}.py
+rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/%{module}.py
+# we're already packing those in %doc
+rm -fr $RPM_BUILD_ROOT%{_docdir}/%{module}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README THANKS TODO librarydoc.txt
-%attr(755,root,root) %{_bindir}/*
+%doc README THANKS librarydoc.txt
+%attr(755,root,root) %{_bindir}/weather.py
 %{py_sitescriptdir}/*.py[co]
 %{py_sitescriptdir}/*.egg-info
-%dir %{_examplesdir}/%{name}-%{version}
-%{_examplesdir}/%{name}-%{version}/*
