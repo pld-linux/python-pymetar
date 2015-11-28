@@ -3,7 +3,7 @@ Summary:	Module that provides access to NOAA's METAR weather reports
 Summary(pl.UTF-8):	Moduł do pobierania danych pogodowych METAR
 Name:		python-%{module}
 Version:	0.18
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://www.schwarzvogel.de/pkgs/%{module}-%{version}.tar.gz
