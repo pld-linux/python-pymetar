@@ -9,6 +9,7 @@ Group:		Development/Languages/Python
 Source0:	http://www.schwarzvogel.de/pkgs/%{module}-%{version}.tar.gz
 # Source0-md5:	21b21425b89c5759c5c234ef713dc9b4
 URL:		http://www.schwarzvogel.de/software-pymetar.shtml
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
